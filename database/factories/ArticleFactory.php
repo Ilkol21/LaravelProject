@@ -23,8 +23,9 @@ class ArticleFactory extends Factory
                 'title'=>$title,
                 'body'=>$this->faker->paragraph(100,true),
                 'slug'=>$slug,
-                'img'=>'https://placekitten.com/200/300',
-                'created_at'=>$this->faker->dateTimeBetween('-1 years')
+                'img'=>'https://placekitten.com/g/200/300',
+                'created_at'=>$this->faker->dateTimeBetween('-1 years'),
+            //            'published_at' => Carbon::now()
         ];
     }
 }
